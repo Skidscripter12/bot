@@ -35,3 +35,11 @@ local Window = ArrayField:CreateWindow({
 })
 
 local Tab = Window:CreateTab("Blox Fruit", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Redz Hub",
+   Interact = 'Click',
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+   end,
+})
